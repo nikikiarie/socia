@@ -35,7 +35,7 @@ function App() {
                   <Profile lightMode={lightMode} setLightMode={setLightMode}/> : <Navigate to='login'/> 
                 }
               />
-              <Route path="/verifyuser/:userId/verify/:token" element={<Verified/>}/>
+              <Route path="/users/:userId/verify/:token" element={<Verified/>}/>
             </Routes>
           </Provider>
         </BrowserRouter>
